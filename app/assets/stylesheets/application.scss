@@ -1,2 +1,20 @@
 @import 'custom';
 @import 'bootstrap';
+body {}
+#header {
+  nav {
+    @extend .navbar;
+    @extend .navbar-light;
+    @extend .bg-faded;
+    #brand {
+      @extend .navbar-brand;
+    }
+  }
+}
+#flash {}
+#main {
+  @extend .container-fluid;
+}
+#footer {
+  @extend .container-fluid;
+}
