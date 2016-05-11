@@ -2,3 +2,10 @@ nav
   = link_to(t('brand'), root_url, id: 'brand')
   ul
     = nav_link(t('nav.home'), root_url)
+    li#user-nav
+      ul
+        - if signed_in?
+          = nav_link(current_user.name, '#')
+          = nav_link(t('sign_out'), logout_url, method: :delete)
+        - else
+          = nav_link(t('sign_in'), login_url)

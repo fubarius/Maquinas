@@ -6,4 +6,12 @@ module ApplicationHelper
       link_to(*args, &block)
     end
   end
+
+  def current_user
+    User.current
+  end
+  
+  def signed_in?
+    !!current_user
+  end
 end

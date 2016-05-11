@@ -1,0 +1,6 @@
+h1 = t('.heading')
+p = t('.info')
+
+ul
+  - @providers.each do |provider|
+    li = link_to(provider, "auth/#{provider}")

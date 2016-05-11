@@ -1,2 +1,13 @@
 en:
   brand: "Maquinas"
+  home: 'Home'
+  sign_in: 'Log In / Sign Up'
+  sign_out: 'Sign Out'
+  sessions:
+    new:
+      heading: 'Log In / Sign Up'
+      info: "Select a provider below to log in. If you don't have an account, one will be created."
+    create:
+      signed_in: 'You are now signed in. Yay!'
+    destroy:
+      signed_out: 'You are now signed out. Boo!'

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
+
+# Stock Maquinas
 gem 'slim-rails'
 gem 'high_voltage', github: 'thoughtbot/high_voltage'
 gem 'bootstrap', github: 'twbs/bootstrap-rubygem'
