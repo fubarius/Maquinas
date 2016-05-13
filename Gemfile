@@ -12,7 +12,7 @@ gem 'omniauth'
 gem 'pundit', github: 'elabs/pundit'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.0.beta3', "< 3.6.0"
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', github: 'fubarius/shoulda-matchers'
 end
