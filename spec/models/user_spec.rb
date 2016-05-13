@@ -7,6 +7,20 @@ RSpec.describe User, :type => :model do
     should have_many :authentications
   end
 
+  context '#display_name' do
+    it "should return name" do
+      assert_equal subject.name, subject.display_name
+    end
+    it "should return nickname when no name" do
+      subject = FactoryGirl.build(:user, name: nil)
+      assert_equal subject.nickname, subject.display_name
+    end
+    it "should append [admin] when admin" do
+      subject.admin!
+      assert_equal subject.name + ' [admin]', subject.display_name
+    end
+  end
+
   context '.from_auth_hash' do
     let(:subject) { User.from_auth_hash(auth_hash) }
     let(:auth_hash) do
