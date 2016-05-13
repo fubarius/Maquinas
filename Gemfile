@@ -9,6 +9,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
 end
 gem 'omniauth'
+gem 'pundit', github: 'elabs/pundit'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 group :development, :test do
   gem 'rspec-rails'

@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_many :authentications
 
+  enum group: [:standard, :admin]
+
   class << self
     # Create a user from an auth hash.
     def from_auth_hash(auth_hash)

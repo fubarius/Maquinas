@@ -8,6 +8,13 @@ GIT
       mime-types (>= 1.16)
 
 GIT
+  remote: git://github.com/elabs/pundit.git
+  revision: 58eda659d44a2e9d5e022fd23cc0f65bad7f7d82
+  specs:
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
+
+GIT
   remote: git://github.com/fubarius/shoulda-matchers.git
   revision: dc731f5a365b5c9aed36e3cfb375beece5b1ef69
   specs:
@@ -239,6 +246,7 @@ DEPENDENCIES
   omniauth
   pg (~> 0.18)
   puma (~> 3.0)
+  pundit!
   rails (>= 5.0.0.rc1, < 5.1)
   rails-assets-tether!
   rspec-rails
