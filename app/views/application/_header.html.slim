@@ -5,7 +5,7 @@ nav
     li#user-nav
       ul
         - if signed_in?
-          = nav_link(current_user.display_name, '#')
+          = nav_link(current_user.name, '#')
           = nav_link(t('sign_out'), logout_url, method: :delete)
         - else
           = nav_link(t('sign_in'), login_url)

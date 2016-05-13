@@ -3,12 +3,6 @@ class User < ApplicationRecord
 
   enum group: [:standard, :admin]
 
-  def display_name
-    n = name || nickname
-    n += " [admin]" if admin?
-    n
-  end
-
   class << self
     # Create a user from an auth hash.
     def from_auth_hash(auth_hash)
